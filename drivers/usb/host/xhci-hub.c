@@ -473,7 +473,6 @@ void xhci_test_and_clear_bit(struct xhci_hcd *xhci, __le32 __iomem **port_array,
 	}
 }
 
-<<<<<<< HEAD
 static void xhci_single_step_completion(struct urb *urb)
 {
 	struct completion *done = urb->context;
@@ -616,7 +615,6 @@ cleanup:
 	kfree(buf);
 	return retval;
 }
-=======
 /* Updates Link Status for super Speed port */
 static void xhci_hub_report_link_state(u32 *status, u32 status_reg)
 {
@@ -651,7 +649,6 @@ static void xhci_hub_report_link_state(u32 *status, u32 status_reg)
 	}
 	/* update status field */
 	*status |= pls;
->>>>>>> e171ce5cc675... usb: Add support for root hub port status CAS
 }
 
 int xhci_hub_control(struct usb_hcd *hcd, u16 typeReq, u16 wValue,
